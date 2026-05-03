@@ -70,7 +70,7 @@ const Navbar = ({ darkMode }: { darkMode: boolean }) => {
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-3">
             <img src="https://lh3.googleusercontent.com/d/16khQwPLVcFG8XwMkPEkN7_ratLBcZQuv" alt="Smile World Logo" className="w-10 h-10 object-contain" />
-            <span className={`font-display font-bold text-lg tracking-tight ${isScrolled ? (darkMode ? 'text-white' : 'text-slate-800') : (darkMode ? 'text-white backdrop-blur-sm bg-black/20 px-2 rounded' : 'text-slate-800 backdrop-blur-sm px-2 rounded')}`}>
+            <span className={`font-display font-bold text-lg tracking-tight ${isScrolled ? (darkMode ? 'text-amber-500' : 'text-amber-600') : (darkMode ? 'text-amber-500 backdrop-blur-sm bg-black/20 px-2 rounded' : 'text-amber-600 backdrop-blur-sm px-2 rounded')}`}>
               Smile World
             </span>
           </div>
@@ -919,9 +919,17 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-gray-200 dark:border-slate-800 flex flex-col md:row justify-between items-center gap-4 text-gray-400 text-sm text-center md:text-left">
         <p>© 2024 Smile World. All Rights Reserved.</p>
-        <div className="flex gap-8">
-          <a href="#" className="hover:text-gray-600">Privacy Policy</a>
-          <a href="#" className="hover:text-gray-600">Terms of Service</a>
+        <div className="flex flex-wrap justify-center gap-8">
+          <a href="#" className="hover:text-gray-600 transition-colors">Privacy Policy</a>
+          <a href="#" className="hover:text-gray-600 transition-colors">Terms of Service</a>
+          <a 
+            href="https://ai.studio/apps/dec62488-73b5-4024-8008-223ee557f68f" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-sky-500 hover:text-sky-600 font-medium transition-colors"
+          >
+            View Project in AI Studio
+          </a>
         </div>
       </div>
     </footer>
